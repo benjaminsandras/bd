@@ -1,3 +1,78 @@
 .container,.row,.col{
-	margin: 5%;
+	margin: 2%;
+	text-align: center;
 }
+
+#firstText{
+	font-family: 'Bad Signal.otf';
+
+}
+
+.accbut{
+	background-color: #790000;
+	width: 20em;
+	height: 15em;
+	opacity: 0.5;
+}
+
+em{
+	margin-right:2%; 
+	font-size: xx-large;
+	color: white;
+}
+
+h1{
+	font-size: 7em;
+	color: white;
+}
+
+body{
+	background-image: url('../svg/bgpremiere.jpg');
+	background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+@font-face 
+{
+	font-family: 'Bad Signal.otf';
+	src: url('Bad Signal.otf') format('truetype') ;
+}
+
+.img_carroussel
+{
+    width: 10em;
+    height: 14em;
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.img_disp
+{
+    width: 15em;
+    height: 19em;
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+   
+button{
+	border : none;
+	background: rgba(255,255,255,0);
+}
+
+.info{
+	color: white;
+	font-size: x-large;
+}
+
+
+

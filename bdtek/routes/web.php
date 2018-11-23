@@ -25,7 +25,7 @@ Route::get('BD', 'CollectionController@clicbd')->name('nameListe_collection');
 
 Route::get('mon_espace', 'mon_espaceController@show')->name('nameMon_espace');
 
-Route::get('tome', 'tomeController@show')->name('nameTome');
+Route::get('tome', 'BDController@show')->name('nameTome');
 
 // Route::get('ajax', 'localisationController@ajax');
 

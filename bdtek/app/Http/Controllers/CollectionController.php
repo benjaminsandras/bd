@@ -15,16 +15,12 @@ class CollectionController extends Controller
 	public function clicbd(){
 
 		if (isset($_GET['bd'])) {
-		
-		
-		 	$BD = Contient::find(intval($_GET['bd']))->BD;
-		 
-			return view('dispcollection', ['BD' => $BD]);
-    		// $listebd=BD::where('id',$_GET['tome'])->get();
-      //   	return view('dispcollection', ['listebd' => $listebd]);
-		}
-	
+
+			$BD = Collection::find(intval($_GET['bd']))->BD;
+		 	return view('dispcollection', ['BD' => $BD]);
+    	}
 	}	
+	
 	public function clic(){
 		
 		if (isset($_GET['humour'])) {
@@ -33,15 +29,12 @@ class CollectionController extends Controller
         	return view('Collection', ['liste' => $liste]);
 		}
 	
-
-		
 		if (isset($_GET['action'])) {
 
     		$liste=Collection::where('categorie',$_GET['action'])->get();
         	return view('Collection', ['liste' => $liste]);
 		}
 
-		
 		if (isset($_GET['adulte'])) {
 
     		$liste=Collection::where('categorie',$_GET['adulte'])->get();

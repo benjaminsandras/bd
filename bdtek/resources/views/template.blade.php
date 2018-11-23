@@ -6,9 +6,19 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <div id="firstText" class="container">
+    <div class="row">
+      <div class="col-sm-4"><h1 id="fistword">BD'tek...</h1></div>
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+        <em id="secondText">dans</em>
+        <em id="thirdText">ta</em>
+        <em id="fourthText">gueule</em></div>
+      </div>
+    </div>
+</div>
 
-
-	<nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-dark navbar-expand-lg" style="background-color: black;">
   <a class="navbar-brand" href="http://localhost:8000">Accueil</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>

@@ -9,24 +9,12 @@ use App\BD;
 
 class BDController extends Controller
 {
- //    public function show(){
+    public function show(){
 
- //    	// $activites=Activite::all();
- //        return view('dispcollection');
-	// }
+		if (isset($_GET['tome'])) {
 
-	// public function clicbd(){
-
-	// 	if (isset($_GET['bd'])) {
-			
-	// 		$id = intval($_GET['bd']);
-	// 		var_dump($id);
-	// 	 	$BD = BD::find($id);
-	// 	 	// return view('dispcollection', ['BD' => $BD]);
-	// 	 	var_dump($BD);
- //    		// $listebd=BD::where('id',$_GET['tome'])->get();
- //      //   	return view('dispcollection', ['listebd' => $listebd]);
-	// 	}
-	
-	// }	
+    		$info=BD::where('id',$_GET['tome'])->get();
+        	return view('tome', ['info' => $info]);
+		}
+	}
 }

@@ -8,8 +8,8 @@ class Contient extends Model
 {
     protected $table = 'contient';
 
-     public function BD()
-    {
-        return $this->hasMany('App\BD', 'id', 'bd_id');
-    }
+    //  public function BD()
+    // {
+    //     return $this->hasMany('App\BD', 'id', 'bd_id');
+    // }
 }

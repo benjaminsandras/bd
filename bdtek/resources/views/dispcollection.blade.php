@@ -5,31 +5,18 @@
 @endsection
 
 @section('contenu')
-	
 
 <div class="container">
- 		 @foreach($BD as $BD)
  	<div class="row">
- 		<div class="col-sm-12">
- 			<button name="tome" value="{{$BD->id}}" type="submit"><img src="{{$BD->image}}"></button>
- 		</div>
- 		<!-- <div class="col-sm-5">
- 			
- 		</div> -->
+ 		@foreach($BD as $BD)
+ 			<div class="img_carroussel">
+ 				<form action="tome" method="get">
+ 					<button name="tome" value="{{$BD->id}}" type="submit"><img class="img_carroussel" src="{{$BD->image}}"></button>
+ 				</form>
+ 			</div>
+ 		@endforeach
  	</div>
-
- 	
-
- 	<!-- <div class="row">
- 		<div class="col-sm-5">
- 			<button type="submit">Adulte</button>
- 		</div>
- 		<div class="col-sm-5">
- 			<button type="submit">Humour</button>
- 		</div>
- 	</div> -->
- 	@endforeach
 </div>
 
- liste_collection
+ 
 @endsection
