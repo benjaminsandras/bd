@@ -12,10 +12,12 @@
  			<div class="col-sm-4">
  				<img class="img_disp" src="{{$info->image}}">
  			</div>
- 			<div class="col-sm-8 info">
+ 			<div class="col-sm-3"></div>
+ 			<div class="col-sm-5 info">
  				<p>- {{$info->nom}}</p>	 
  				<p>- tome {{$info->tome}}</p> 
  				<p>- {{$info->nom_auteur}}</p>
+ 				<p>- {{$info->resume}}</p>
  			</div>
  		</div>
  	@endforeach

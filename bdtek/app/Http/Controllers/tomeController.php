@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class tomeController extends Controller
 {
-    public function show(){
+    public function showtome(){
 
     	// $activites=Activite::all();
         return view('tome');

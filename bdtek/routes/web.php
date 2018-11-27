@@ -13,7 +13,9 @@
 
 
 
-Route::get('/', 'AccueilController@show')->name('nameAccueil');
+Route::get('template', 'CollectionController@show')->name('nameAccueil');
+
+Route::get('/', 'AccueilController@showacc')->name('nameAccueil');
 
 Route::get('Collection', 'CollectionController@clic')->name('nameDispCollection');
 // Route::get('Collection', 'CollectionController@show')->name('nameDispCollection');
@@ -23,12 +25,12 @@ Route::get('Collection', 'CollectionController@clic')->name('nameDispCollection'
 
 Route::get('BD', 'CollectionController@clicbd')->name('nameListe_collection');
 
-Route::get('mon_espace', 'mon_espaceController@show')->name('nameMon_espace');
+Route::get('mon_espace', 'mon_espaceController@showme')->name('nameMon_espace');
 
-Route::get('tome', 'BDController@show')->name('nameTome');
+Route::get('tome', 'BDController@showtome')->name('nameTome');
 
 // Route::get('ajax', 'localisationController@ajax');
 
-Route::get('favoris', 'favorisController@show')->name('nameFavoris');
+// Route::get('favoris', 'favorisController@show')->name('nameFavoris');
 
 // Route::get('demarche', 'demarcheController@show')->name('nameDemarche');

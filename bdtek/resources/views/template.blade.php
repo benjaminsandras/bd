@@ -52,11 +52,50 @@
   </div>
 </nav>
 
+@yield('contenu')
+@yield('Accueil')
+@yield('tome')
+@yield('Collection')
+@yield('mon_espace')
+@yield('dispcollection')
+
+<div id="blank"></div>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      @foreach ($decouverte1 as $decouverte1)
+        <img class="img_carroussel"src="{{$decouverte1->image_collection}}" alt="" width="1100" height="500">
+      @endforeach
+    </div>
+    <div class="carousel-item">
+      @foreach ($decouverte2 as $decouverte2)
+        <img class="img_carroussel" src="{{$decouverte2->image_collection}}" alt="" width="1100" height="500">
+      @endforeach
+    </div>
+    <div class="carousel-item">
+      @foreach ($decouverte3 as $decouverte3)
+        <img class="img_carroussel" src="{{$decouverte3->image_collection}}" alt="" width="1100" height="500">
+      @endforeach
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
 
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-@yield('contenu')
 
 </body>
 </html>

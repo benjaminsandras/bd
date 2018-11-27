@@ -50,7 +50,11 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 2%;
-    margin-right: 2%;
+    margin-right: 5%;
+}
+
+.carousel-item{
+	text-align: center;
 }
 
 .img_disp
@@ -72,6 +76,11 @@ button{
 .info{
 	color: white;
 	font-size: x-large;
+	text-align: left;
+}
+
+#blank{
+	margin-bottom: 10%;
 }
 
 
